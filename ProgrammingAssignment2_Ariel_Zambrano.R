@@ -1,5 +1,5 @@
-makeCacheMatrix <- function(x = matrix()) {
-  makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix()){
+  makeCacheMatrix <- function(x = matrix()){
     inv <- NULL 
     set <- function(y) {
       x <<- y 
@@ -19,4 +19,4 @@ makeCacheMatrix <- function(x = matrix()) {
       inv <- solve(data, ...)
       x$setinverse(inv)
       inv
-    }
+  }
